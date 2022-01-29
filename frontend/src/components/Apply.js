@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Element from "./Element";
+import {FormContext} from "../FormContext"
 
 const JobDetail = (props) => {
   let params = useParams();
@@ -43,8 +44,21 @@ const JobDetail = (props) => {
       );
   }, []);
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
+    console.log(form_fields);
+  };
 
+  const handleChange = (id, event) => {
+    const newElements = { ...form_fields };
+    newElements.fields.forEach((field) => {
+      const { field_type, field_id } = field;
+
+      setFormFields(newElements);
+    });
+    console.log(newElements);
+  };
 
   if (error) {
     return <div>Error: {error.message}</div>;
@@ -69,9 +83,23 @@ const JobDetail = (props) => {
             <h4>Application form</h4>
             {form_fields.form_fields}
           </div>
-          <form>
-            { form_fields ? form_fields.map((field, i) => <Element key={i} field={field} />) : null }
-          </form>
+          <FormContext.Provider value={{ handleChange }}>
+            <form>
+              {form_fields
+                ? form_fields.map((field, i) => (
+                    <Element key={i} field={field} />
+                  ))
+                : null}
+
+              <button
+                type="submit"
+                className="btn btn-primary"
+                onClick={(e) => handleSubmit(e)}
+              >
+                Submit
+              </button>
+            </form>
+          </FormContext.Provider>
         </div>
       </div>
     );
