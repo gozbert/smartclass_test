@@ -69,7 +69,7 @@ const JobDetail = (props) => {
 
           <br></br>
           <Link className="applyJob" to={`/applyJob/${item.shortcode}`}>
-            Apply
+            Apply this Job
           </Link>
           <br></br>
           <br></br>
