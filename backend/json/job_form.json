@@ -1,0 +1,109 @@
+{
+  "form_fields": [
+    {
+      "key": "headline",
+      "label": "Headline",
+      "type": "string",
+      "required": true
+    },
+    {
+      "key": "address",
+      "label": "Address",
+      "type": "string",
+      "required": false
+    },
+    {
+      "key": "avatar",
+      "label": "Photo",
+      "type": "file",
+      "supported_file_types": ["jpg", "jpeg", "gif", "png"],
+      "max_file_size": 5242880,
+      "required": true
+    },
+    {
+      "key": "experience",
+      "label": "Experience",
+      "type": "complex",
+      "multiple": true,
+      "required": false,
+      "fields": [
+        {
+          "key": "title",
+          "label": "Title",
+          "type": "string",
+          "required": true
+        },
+        {
+          "key": "company",
+          "label": "Company",
+          "type": "string",
+          "required": false
+        },
+        {
+          "key": "industry",
+          "label": "Industry",
+          "type": "string",
+          "required": false
+        },
+        {
+          "key": "summary",
+          "label": "Summary",
+          "type": "free_text",
+          "required": false
+        },
+        {
+          "key": "current",
+          "label": "I currently work here",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "key": "start_date",
+          "type": "date",
+          "required": false
+        },
+        {
+          "key": "end_date",
+          "type": "date",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "summary",
+      "label": "Summary",
+      "type": "free_text",
+      "required": false
+    },
+    {
+      "key": "resume",
+      "label": "Resume",
+      "type": "file",
+      "supported_file_types": [
+        "pdf",
+        "doc",
+        "docx",
+        "odt",
+        "rtf",
+        "html",
+        "htm",
+        "txt"
+      ],
+      "max_file_size": 5242880,
+      "required": false
+    },
+    {
+      "key": "cover_letter",
+      "label": "Cover letter",
+      "type": "free_text",
+      "required": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "4da",
+      "body": "Describe a win situation",
+      "type": "free_text"
+    }
+  ]
+}

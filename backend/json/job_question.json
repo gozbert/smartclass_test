@@ -1,0 +1,104 @@
+{
+    "questions": [
+      {
+        "id": "2128d717",
+        "body": "Explain one aspect of this role you believe you will excel at.",
+        "type": "free_text",
+        "required": true
+      },
+      {
+        "id": "a8ee3a9",
+        "body": "Explain one aspect of this role you believe will be a challenge.",
+        "type": "free_text",
+        "required": true
+      },
+      {
+        "id": "1914385",
+        "body": "How many years administrative experience do you have?",
+        "type": "dropdown",
+        "required": true,
+        "single_answer": true,
+        "choices": [
+          {
+            "id": "3f3c0265",
+            "body": "0-3 years"
+          },
+          {
+            "id": "2632b0fd",
+            "body": "3-5 years"
+          },
+          {
+            "id": "1135a194",
+            "body": "Over 5 years"
+          }
+        ]
+      },
+      {
+        "id": "1d3f348f",
+        "body": "Intermediate or above proficiency with MS Office?",
+        "type": "boolean",
+        "required": true
+      },
+      {
+        "id": "2cc66842",
+        "body": "How would you describe yourself in a sentence?",
+        "type": "short_text",
+        "required": true
+      },
+      {
+        "id": "3399e6cd",
+        "body": "Which Microsoft Office tools are you familiar with?",
+        "type": "multiple_choice",
+        "required": true,
+        "single_answer": false,
+        "choices": [
+          {
+            "id": "3049114a",
+            "body": "Word"
+          },
+          {
+            "id": "29406296",
+            "body": "Excel"
+          },
+          {
+            "id": "1e477229",
+            "body": "Powerpoint"
+          }
+        ]
+      },
+      {
+        "id": "386d95ed",
+        "body": "When does your work permit expire? (please fill in only if applicable)",
+        "type": "date",
+        "required": true
+      },
+      {
+        "id": "1e6c9547",
+        "body": "Work permit (please fill in only if applicable)",
+        "type": "file",
+        "required": true,
+        "supported_file_types": [
+          "pdf",
+          "doc",
+          "docx",
+          "odt",
+          "html",
+          "rtf",
+          "ppt",
+          "pptx",
+          "png",
+          "jpg",
+          "jpeg",
+          "gif",
+          "tiff",
+          "txt",
+          "xlsx",
+          "xls",
+          "pptx",
+          "ppt",
+          "zip"
+        ],
+        "max_file_size": 20971520
+      }
+    ]
+  }

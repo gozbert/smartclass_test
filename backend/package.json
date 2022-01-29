@@ -1,0 +1,17 @@
+{
+  "name": "smartclass_test",
+  "version": "1.0.0",
+  "description": "SmartClass Interview",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Gozbert Stanslaus",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
